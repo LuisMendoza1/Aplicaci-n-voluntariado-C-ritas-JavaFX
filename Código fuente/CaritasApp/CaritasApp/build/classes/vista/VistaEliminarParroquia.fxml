@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="976.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorEliminarParroquia">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="406.0" layoutX="37.0" layoutY="157.0" stroke="#ff000055" strokeType="INSIDE" strokeWidth="3.0" width="896.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Rectangle>
+      <Label layoutX="286.0" layoutY="36.0" minHeight="16" minWidth="69" prefHeight="25.0" prefWidth="430.0" text="CÁRITAS DIOCESANA DE ALBACETE" textFill="#c90000">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font></Label>
+      <Label layoutX="305.0" layoutY="72.0" text="Registro General de Voluntariado">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="120.0" fitWidth="187.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/imageCaritas.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="102.0" fitWidth="106.0" layoutX="849.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/imageAPP.png" />
+         </image>
+       </ImageView>
+      <Label layoutX="402.0" layoutY="121.0" text="Eliminar Parroquia" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCancelarEliminacion" cancelButton="true" layoutX="695.0" layoutY="578.0" mnemonicParsing="false" onAction="#cancelarEliminacion" prefHeight="46.0" prefWidth="78.0" text="Cancelar">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="btnEliminarParroquia" layoutX="789.0" layoutY="578.0" mnemonicParsing="false" onAction="#eliminarParroquia" prefHeight="46.0" prefWidth="145.0" text="Eliminar Parroquia">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="104.0" layoutY="147.0" style="-fx-background-color: white;" text="Lista de parroquias" textFill="#c90000">
+         <font>
+            <Font name="Arial Italic" size="17.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="63.0" layoutY="220.0" prefHeight="323.0" prefWidth="848.0">
+         <content>
+            <TableView fx:id="tablaParroquias" prefHeight="388.0" prefWidth="1430.0" stylesheets="@../css/hideScrollBar.css">
+              <columns>
+                <TableColumn fx:id="colNombre" prefWidth="128.0" text="NOMBRE" />
+                <TableColumn fx:id="colParroco" prefWidth="128.0" text="PÁRROCO" />
+                  <TableColumn fx:id="colZona" prefWidth="128.0" text="ZONA" />
+                  <TableColumn fx:id="colPoblacion" prefWidth="128.0" text="POBLACIÓN" />
+                  <TableColumn fx:id="colDireccion" prefWidth="128.0" text="DIRECCIÓN" />
+                  <TableColumn fx:id="colCodigo" prefWidth="128.0" text="CÓDIGO POSTAL" />
+                  <TableColumn fx:id="colProvincia" prefWidth="128.0" text="PROVINCIA" />
+                  <TableColumn fx:id="colCarteles" prefWidth="128.0" text="CARTELES" />
+                  <TableColumn fx:id="colTripticos" prefWidth="128.0" text="TRIPTICOS" />
+                  <TableColumn fx:id="colSobres" prefWidth="128.0" text="SOBRES" />
+                  <TableColumn fx:id="colUnidades" prefWidth="150.0" text="UNIDADES DIDÁCTICAS" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <TextField fx:id="search" layoutX="63.0" layoutY="180.0" prefHeight="25.0" prefWidth="848.0" promptText="Buscar parroquia por nombre..." />
+    </children>
+</AnchorPane>

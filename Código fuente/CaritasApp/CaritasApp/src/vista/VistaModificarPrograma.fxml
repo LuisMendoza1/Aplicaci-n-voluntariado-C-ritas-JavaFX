@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="976.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorModificarPrograma">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="388.0" layoutX="37.0" layoutY="162.0" stroke="#ff000055" strokeType="INSIDE" strokeWidth="3.0" width="900.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Rectangle>
+      <Label layoutX="279.0" layoutY="30.0" minHeight="16" minWidth="69" prefHeight="25.0" prefWidth="430.0" text="CÁRITAS DIOCESANA DE ALBACETE" textFill="#c90000">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font></Label>
+      <Label layoutX="305.0" layoutY="70.0" text="Registro General de Voluntariado">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="120.0" fitWidth="187.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/imageCaritas.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="102.0" fitWidth="106.0" layoutX="844.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/imageAPP.png" />
+         </image>
+       </ImageView>
+      <Label layoutX="414.0" layoutY="121.0" text="Ficha del Programa" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="60.0" layoutY="194.0" text="Nombre del programa:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nombreModificacionPrograma" layoutX="215.0" layoutY="190.0" prefHeight="25.0" prefWidth="689.0" />
+      <Button fx:id="btnCancelarPrograma" cancelButton="true" layoutX="694.0" layoutY="565.0" mnemonicParsing="false" onAction="#cancelarPrograma" prefHeight="46.0" prefWidth="82.0" text="Cancelar">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="btnGuardarPrograma" layoutX="786.0" layoutY="565.0" mnemonicParsing="false" onAction="#guardarPrograma" prefHeight="46.0" prefWidth="151.0" text="Guardar Programa">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="103.0" layoutY="152.0" style="-fx-background-color: white;" text="Datos del Programa" textFill="#c90000">
+         <font>
+            <Font name="Arial Italic" size="17.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

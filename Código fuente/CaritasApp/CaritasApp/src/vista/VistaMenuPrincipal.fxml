@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="976.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorMenuPrincipal">
+   <left>
+      <VBox prefHeight="635.0" prefWidth="197.0" style="-fx-background-color: #c90000;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnInicio" mnemonicParsing="false" onMouseClicked="#inicio" onMouseEntered="#cambiarColorIntroInicio" onMouseExited="#cambiarColorExitInicio" prefHeight="252.0" prefWidth="197.0" style="-fx-background-color: transparent; -fx-border-color: WHITE; -fx-border-width: 0px 0px 2px 0px;" text="INICIO" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnVoluntarios" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#voluntarios" onMouseEntered="#cambiarColorIntroVoluntarios" onMouseExited="#cambiarColorExitVoluntarios" prefHeight="252.0" prefWidth="197.0" style="-fx-background-color: transparent; -fx-border-color: WHITE; -fx-border-width: 0px 0px 2px 0px;" text="VOLUNTARIOS" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnParroquias" layoutX="10.0" layoutY="208.0" mnemonicParsing="false" onMouseClicked="#parroquias" onMouseEntered="#cambiarColorIntroParroquias" onMouseExited="#cambiarColorExitParroquias" prefHeight="252.0" prefWidth="197.0" style="-fx-background-color: transparent; -fx-border-color: WHITE; -fx-border-width: 0px 0px 2px 0px;" text="PARROQUIAS" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEquipos" layoutX="10.0" layoutY="307.0" mnemonicParsing="false" onMouseClicked="#equipos" onMouseEntered="#cambiarColorIntroEquipos" onMouseExited="#cambiarColorExitEquipos" prefHeight="252.0" prefWidth="197.0" style="-fx-background-color: transparent; -fx-border-color: WHITE; -fx-border-width: 0px 0px 2px 0px;" text="EQUIPOS" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnProgramas" mnemonicParsing="false" onMouseClicked="#programas" onMouseEntered="#cambiarColorIntroProgramas" onMouseExited="#cambiarColorExitProgramas" prefHeight="252.0" prefWidth="197.0" style="-fx-background-color: transparent; -fx-border-color: WHITE; -fx-border-width: 0px 0px 2px 0px;" text="PROGRAMAS" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnInformes" layoutX="10.0" layoutY="109.0" mnemonicParsing="false" onMouseClicked="#informes" onMouseEntered="#cambiarColorIntroInformes" onMouseExited="#cambiarColorExitInformes" prefHeight="252.0" prefWidth="197.0" style="-fx-background-color: transparent; -fx-border-color: WHITE; -fx-border-width: 0px 0px 2px 0px;" text="INFORMES" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="ap" prefHeight="634.0" prefWidth="695.0" BorderPane.alignment="CENTER">
+         <children>
+                  <ImageView fitHeight="144.0" fitWidth="202.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/imageCaritas.png" />
+                    </image>
+                  </ImageView>
+                  <ImageView fitHeight="105.0" fitWidth="106.0" layoutX="650.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/imageAPP.png" />
+                    </image>
+                  </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff10" height="473.0" layoutX="18.0" layoutY="140.0" stroke="#ff000054" strokeType="INSIDE" strokeWidth="3.0" width="743.0">
+               <effect>
+                  <ColorAdjust />
+               </effect></Rectangle>
+                  <Label layoutX="36.0" layoutY="231.0" minHeight="16" minWidth="69" prefHeight="173.0" prefWidth="708.0" text="CÁRITAS DIOCESANA DE ALBACETE" textFill="#c90000">
+                    <font>
+                        <Font name="Arial Bold" size="39.0" />
+                    </font>
+                  </Label>
+                  <Label layoutX="184.0" layoutY="366.0" text="Programa de Voluntariado">
+                    <font>
+                        <Font name="Arial Bold" size="33.0" />
+                    </font>
+                  </Label>
+         </children></AnchorPane>
+   </center>
+</BorderPane>

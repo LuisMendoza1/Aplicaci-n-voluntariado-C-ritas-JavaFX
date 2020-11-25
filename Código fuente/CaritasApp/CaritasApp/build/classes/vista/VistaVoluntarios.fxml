@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorVoluntarios">
+   <children>
+<AnchorPane id="AnchorPane" prefHeight="634.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <Label layoutX="194.0" layoutY="26.0" minHeight="16" minWidth="69" prefHeight="25.0" prefWidth="430.0" text="CÁRITAS DIOCESANA DE ALBACETE" textFill="#c90000">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font></Label>
+      <Label layoutX="266.0" layoutY="70.0" text="Gestión del Voluntariado">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="144.0" fitWidth="202.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/imageCaritas.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="105.0" fitWidth="106.0" layoutX="650.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/imageAPP.png" />
+         </image>
+       </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff0f" height="473.0" layoutX="18.0" layoutY="140.0" stroke="#ff000054" strokeType="INSIDE" strokeWidth="3.0" width="743.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Rectangle>
+      <Button fx:id="consultaActivos" layoutX="368.0" layoutY="228.0" mnemonicParsing="false" onAction="#consultarVoluntarios" prefHeight="51.0" prefWidth="58.0" style="-fx-border-width: 2 2 2 2;" textFill="#c90000">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font></Button>
+      <Button fx:id="consultaBajas" layoutX="600.0" layoutY="228.0" mnemonicParsing="false" onAction="#consultarBajas" prefHeight="51.0" prefWidth="58.0" style="-fx-border-width: 2 2 2 2;" textFill="#c90000">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font></Button>
+      <Button fx:id="altaVoluntario" layoutX="369.0" layoutY="377.0" mnemonicParsing="false" onAction="#agregarVoluntario" prefHeight="51.0" prefWidth="58.0" style="-fx-border-width: 2 2 2 2;" textFill="#c90000">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font></Button>
+            <Button fx:id="consultarEntrevistado" layoutX="113.0" layoutY="228.0" mnemonicParsing="false" onAction="#consultarEntrevistados" prefHeight="51.0" prefWidth="58.0" style="-fx-border-width: 2 2 2 2;" textFill="#c90000">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Button>
+            <Label layoutX="372.0" layoutY="321.0" prefHeight="23.0" prefWidth="58.0" text="ALTA" textFill="#c90000">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="355.0" layoutY="196.0" prefHeight="23.0" prefWidth="94.0" text="ACTIVOS" textFill="#c90000">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="564.0" layoutY="173.0" prefHeight="23.0" prefWidth="131.0" text="CONSULTAR" textFill="#c90000">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="173.0" prefHeight="23.0" prefWidth="137.0" text="CONSULTAR" textFill="#c90000">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="604.0" layoutY="469.0" prefHeight="23.0" prefWidth="58.0" text="BAJA" textFill="#c90000">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="bajaVoluntario" layoutX="602.0" layoutY="528.0" mnemonicParsing="false" onAction="#darDeBajaVoluntario" prefHeight="51.0" prefWidth="58.0" style="-fx-border-width: 2 2 2 2;" textFill="#c90000">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Button>
+            <Label layoutX="333.0" layoutY="344.0" prefHeight="23.0" prefWidth="137.0" text="VOLUNTARIO" textFill="#c90000">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="196.0" prefHeight="23.0" prefWidth="175.0" text="ENTREVISTADOS" textFill="#c90000">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="598.0" layoutY="196.0" prefHeight="23.0" prefWidth="68.0" text="BAJAS" textFill="#c90000">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="568.0" layoutY="489.0" prefHeight="23.0" prefWidth="137.0" text="VOLUNTARIO" textFill="#c90000">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="334.0" layoutY="173.0" prefHeight="23.0" prefWidth="137.0" text="CONSULTAR" textFill="#c90000">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="eliminarVoluntario" layoutX="369.0" layoutY="528.0" mnemonicParsing="false" onAction="#eliminarVoluntario" prefHeight="51.0" prefWidth="58.0" style="-fx-border-width: 2 2 2 2;" textFill="#c90000">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Button>
+            <Label layoutX="335.0" layoutY="490.0" prefHeight="23.0" prefWidth="137.0" text="VOLUNTARIO" textFill="#c90000">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="351.0" layoutY="469.0" prefHeight="23.0" prefWidth="105.0" text="ELIMINAR" textFill="#c90000">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="eliminarEntrevistado" layoutX="113.0" layoutY="528.0" mnemonicParsing="false" onAction="#eliminarEntrevistado" prefHeight="51.0" prefWidth="58.0" style="-fx-border-width: 2 2 2 2;" textFill="#c90000">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Button>
+            <Label layoutX="92.0" layoutY="469.0" prefHeight="23.0" prefWidth="105.0" text="ELIMINAR" textFill="#c90000">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="490.0" prefHeight="23.0" prefWidth="167.0" text="ENTREVISTADO" textFill="#c90000">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+    </children>
+</AnchorPane>
+   </children>
+</HBox>

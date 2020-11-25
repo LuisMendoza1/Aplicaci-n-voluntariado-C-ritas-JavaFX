@@ -1,0 +1,14 @@
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+.root {
+    -tab-text-color: #c90000 ;
+}
+
+.tab-label {
+    -fx-text-fill: #c90000 ;
+    -fx-font-size: 17;
+    -fx-font-family: "Arial";
+    -fx-font-style: italic;
+}

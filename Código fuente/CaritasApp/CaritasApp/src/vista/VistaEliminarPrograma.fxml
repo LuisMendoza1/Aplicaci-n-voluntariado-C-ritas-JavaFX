@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="976.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorEliminarPrograma">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="401.0" layoutX="37.0" layoutY="157.0" stroke="#ff000055" strokeType="INSIDE" strokeWidth="3.0" width="898.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Rectangle>
+      <Label layoutX="289.0" layoutY="30.0" minHeight="16" minWidth="69" prefHeight="25.0" prefWidth="430.0" text="CÁRITAS DIOCESANA DE ALBACETE" textFill="#c90000">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font></Label>
+      <Label layoutX="307.0" layoutY="70.0" text="Registro General de Voluntariado">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="120.0" fitWidth="187.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/imageCaritas.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="102.0" fitWidth="106.0" layoutX="852.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/imageAPP.png" />
+         </image>
+       </ImageView>
+      <Label layoutX="420.0" layoutY="120.0" text="Eliminar Programa" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCancelarEliminacion" cancelButton="true" layoutX="701.0" layoutY="574.0" mnemonicParsing="false" onAction="#cancelarEliminacion" prefHeight="46.0" prefWidth="78.0" text="Cancelar">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="btnEliminarPrograma" layoutX="792.0" layoutY="574.0" mnemonicParsing="false" onAction="#eliminarPrograma" prefHeight="46.0" prefWidth="146.0" text="Eliminar Programa">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="104.0" layoutY="147.0" style="-fx-background-color: white;" text="Lista de programas" textFill="#c90000">
+         <font>
+            <Font name="Arial Italic" size="17.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="63.0" layoutY="220.0" prefHeight="323.0" prefWidth="848.0">
+         <content>
+            <TableView fx:id="tablaProgramas" prefHeight="388.0" prefWidth="895.0" stylesheets="@../css/hideScrollBar.css">
+              <columns>
+                <TableColumn fx:id="colNombre" prefWidth="128.0" text="NOMBRE" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <TextField fx:id="search" layoutX="63.0" layoutY="180.0" prefHeight="25.0" prefWidth="848.0" promptText="Buscar equipo por nombre..." />
+    </children>
+</AnchorPane>

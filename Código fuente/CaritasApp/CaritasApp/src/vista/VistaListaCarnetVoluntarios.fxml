@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="976.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorListaCarnetVoluntarios">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="406.0" layoutX="37.0" layoutY="157.0" stroke="#ff000055" strokeType="INSIDE" strokeWidth="3.0" width="896.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Rectangle>
+      <Label layoutX="302.0" layoutY="30.0" minHeight="16" minWidth="69" prefHeight="25.0" prefWidth="430.0" text="CÁRITAS DIOCESANA DE ALBACETE" textFill="#c90000">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font></Label>
+      <Label layoutX="405.0" layoutY="76.0" text="Carnet de voluntario">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="120.0" fitWidth="187.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/imageCaritas.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="102.0" fitWidth="106.0" layoutX="849.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/imageAPP.png" />
+         </image>
+       </ImageView>
+      <Label layoutX="467.0" layoutY="121.0" text="Voluntarios" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCancelarConsulta" cancelButton="true" layoutX="655.0" layoutY="574.0" mnemonicParsing="false" onAction="#cancelarConsulta" prefHeight="46.0" prefWidth="78.0" text="Cancelar">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="btnGenerarCarnet" layoutX="760.0" layoutY="574.0" mnemonicParsing="false" onAction="#generarCarnet" prefHeight="46.0" prefWidth="180.0" text="Crear Carnet Voluntario">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="104.0" layoutY="147.0" style="-fx-background-color: white;" text="Lista de voluntarios" textFill="#c90000">
+         <font>
+            <Font name="Arial Italic" size="17.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="63.0" layoutY="220.0" prefHeight="323.0" prefWidth="848.0">
+         <content>
+            <TableView fx:id="tablaVoluntarios" prefHeight="388.0" prefWidth="6900.0" stylesheets="@../css/hideScrollBar.css">
+              <columns>
+                <TableColumn fx:id="colDNI" prefWidth="128.0" text="DNI/NIF" />
+                <TableColumn fx:id="colNombre" prefWidth="128.0" text="NOMBRE" />
+                  <TableColumn fx:id="colSexo" prefWidth="128.0" text="SEXO" />
+                  <TableColumn fx:id="colNacimiento" prefWidth="128.0" text="NACIMIENTO" />
+                  <TableColumn fx:id="colTelefono1" prefWidth="128.0" text="TELÉFONO 1" />
+                  <TableColumn fx:id="colTelefono2" prefWidth="128.0" text="TELÉFONO 2" />
+                  <TableColumn fx:id="colTelefono3" prefWidth="128.0" text="TELÉFONO 3" />
+                  <TableColumn fx:id="colEmail" prefWidth="128.0" text="EMAIL" />
+                  <TableColumn fx:id="colDir1" prefWidth="128.0" text="DIRECCIÓN 1" />
+                  <TableColumn fx:id="colDir2" prefWidth="128.0" text="DIRECCIÓN 2" />
+                  <TableColumn fx:id="colCP1" prefWidth="128.0" text="CÓDIGO POSTAL 1" />
+                  <TableColumn fx:id="colCP2" prefWidth="128.0" text="CÓDIGO POSTAL 2" />
+                  <TableColumn fx:id="colPoblacion1" prefWidth="128.0" text="POBLACIÓN 1" />
+                  <TableColumn fx:id="colPoblacion2" prefWidth="128.0" text="POBLACIÓN 2" />
+                  <TableColumn fx:id="colProvincia" prefWidth="128.0" text="PROVINCIA" />
+                  <TableColumn fx:id="colNacionalidad" prefWidth="128.0" text="NACIONALIDAD" />
+                  <TableColumn fx:id="colEstadoCivil" prefWidth="128.0" text="ESTADO CIVIL" />
+                  <TableColumn fx:id="colEstudios" prefWidth="128.0" text="ESTUDIOS" />
+                  <TableColumn fx:id="colLugEstudios" prefWidth="128.0" text="ESPECIALIDAD" />
+                  <TableColumn fx:id="colObsFormacion" prefWidth="128.0" text="FORMACIÓN" />
+                  <TableColumn fx:id="colIdioma1" prefWidth="128.0" text="IDIOMA 1" />
+                  <TableColumn fx:id="colNivel1" prefWidth="128.0" text="NIVEL 1" />
+                  <TableColumn fx:id="colIdioma2" prefWidth="128.0" text="IDIOMA 2" />
+                  <TableColumn fx:id="colNivel2" prefWidth="128.0" text="NIVEL 2" />
+                  <TableColumn fx:id="colIdioma3" prefWidth="128.0" text="IDIOMA 3" />
+                  <TableColumn fx:id="colNivel3" prefWidth="128.0" text="NIVEL 3" />
+                  <TableColumn fx:id="colInformatica" prefWidth="128.0" text="INFORMÁTICA" />
+                  <TableColumn fx:id="colSitLab" prefWidth="128.0" text="SITUACIÓN LABORAL" />
+                  <TableColumn fx:id="colCarnet" prefWidth="128.0" text="CARNET" />
+                  <TableColumn fx:id="colExperienciaLaboral" prefWidth="128.0" text="EXPERIENCIA" />
+                  <TableColumn fx:id="colFechaAlta" prefWidth="128.0" text="FECHA ALTA" />
+                  <TableColumn fx:id="colZona" prefWidth="128.0" text="ZONA" />
+                  <TableColumn fx:id="colEquipo1" prefWidth="128.0" text="EQUIPO" />
+                  <TableColumn fx:id="colCargo1" prefWidth="128.0" text="CARGO 1" />
+                  <TableColumn fx:id="colCargo2" prefWidth="128.0" text="CARGO 2" />
+                  <TableColumn fx:id="colCargo3" prefWidth="128.0" text="CARGO 3" />
+                  <TableColumn fx:id="colPrograma1" prefWidth="128.0" text="PROGRAMA 1" />
+                  <TableColumn fx:id="colPrograma2" prefWidth="128.0" text="PROGRAMA 2" />
+                  <TableColumn fx:id="colObservacionesVoluntario" prefWidth="128.0" text="OBSERVACIONES" />
+                  <TableColumn fx:id="colConsejo" prefWidth="128.0" text="CONSEJO" />
+                  <TableColumn fx:id="colFicha" prefWidth="128.0" text="FICHA" />
+                  <TableColumn fx:id="colDelitos" prefWidth="128.0" text="DELITOS" />
+                  <TableColumn fx:id="colImagen" prefWidth="128.0" text="IMAGEN" />
+                  <TableColumn fx:id="colColaboracion" prefWidth="128.0" text="COLABORACIÓN" />
+                  <TableColumn fx:id="colAntecedentes" prefWidth="128.0" text="ANTECEDENTES" />
+                  <TableColumn fx:id="colPadres" prefWidth="128.0" text="PADRES" />
+                  <TableColumn fx:id="colRGPD" prefWidth="128.0" text="RGPD" />
+                  <TableColumn fx:id="colEnviosEmail" prefWidth="128.0" text="ENVIOS EMAIL" />
+                  <TableColumn fx:id="colEnviosPostales" prefWidth="128.0" text="ENVIOS POSTALES" />
+                  <TableColumn fx:id="colObsDocumentacion" prefWidth="250.0" text="OBSERVACIONES DOCUMENTACIÓN" />
+                  <TableColumn fx:id="colBaja" prefWidth="128.0" text="BAJA" />
+                  <TableColumn fx:id="colFechaBaja" prefWidth="128.0" text="FECHA BAJA" />
+                  <TableColumn fx:id="colFoto" prefWidth="128.0" text="FOTO" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <TextField fx:id="search" layoutX="63.0" layoutY="180.0" prefHeight="25.0" prefWidth="848.0" promptText="Buscar voluntario por nombre..." />
+    </children>
+</AnchorPane>

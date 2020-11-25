@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="976.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorNuevoEquipo">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="388.0" layoutX="37.0" layoutY="162.0" stroke="#ff000055" strokeType="INSIDE" strokeWidth="3.0" width="900.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Rectangle>
+      <Label layoutX="265.0" layoutY="30.0" minHeight="16" minWidth="69" prefHeight="25.0" prefWidth="430.0" text="CÁRITAS DIOCESANA DE ALBACETE" textFill="#c90000">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font></Label>
+      <Label layoutX="283.0" layoutY="70.0" text="Registro General de Voluntariado">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="120.0" fitWidth="187.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/imageCaritas.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="102.0" fitWidth="106.0" layoutX="844.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/imageAPP.png" />
+         </image>
+       </ImageView>
+      <Label layoutX="400.0" layoutY="122.0" text="Ficha del Equipo" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="60.0" layoutY="194.0" text="Nombre del equipo:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nombreEquipo" layoutX="212.0" layoutY="190.0" prefHeight="25.0" prefWidth="697.0" />
+      <Label alignment="CENTER" layoutX="61.0" layoutY="242.0" text="Zona:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="60.0" layoutY="352.0" text="Dirección:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="direccionEquipo" layoutX="142.0" layoutY="348.0" prefHeight="25.0" prefWidth="728.0" />
+      <Label alignment="CENTER" layoutX="61.0" layoutY="408.0" text="Cód. Postal:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="codigoEquipo" layoutX="151.0" layoutY="403.0" prefHeight="25.0" prefWidth="722.0" />
+      <Label alignment="CENTER" layoutX="61.0" layoutY="297.0" text="Población:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="poblacionEquipo" layoutX="142.0" layoutY="293.0" prefHeight="25.0" prefWidth="728.0" />
+      <Label alignment="CENTER" layoutX="64.0" layoutY="508.0" text="Provincia:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="provinciaEquipo" layoutX="153.0" layoutY="504.0" prefHeight="25.0" prefWidth="722.0" />
+      <Button fx:id="btnCancelarEquipo" cancelButton="true" layoutX="699.0" layoutY="565.0" mnemonicParsing="false" onAction="#cancelarEquipo" prefHeight="46.0" prefWidth="82.0" text="Cancelar">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="btnCreaEquipo" layoutX="805.0" layoutY="565.0" mnemonicParsing="false" onAction="#crearEquipo" prefHeight="46.0" prefWidth="132.0" text="Crear Equipo">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="103.0" layoutY="152.0" style="-fx-background-color: white;" text="Datos del Equipo" textFill="#c90000">
+         <font>
+            <Font name="Arial Italic" size="17.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="zonaEquipo" layoutX="116.0" layoutY="240.0" prefHeight="25.0" prefWidth="794.0" />
+      <Label alignment="CENTER" layoutX="61.0" layoutY="459.0" text="Teléfono:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="telefonoEquipo" layoutX="145.0" layoutY="457.0" prefHeight="25.0" prefWidth="728.0" />
+    </children>
+</AnchorPane>

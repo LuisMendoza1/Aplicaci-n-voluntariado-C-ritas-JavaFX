@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorInformesProgramas">
+   <children>
+<AnchorPane id="AnchorPane" prefHeight="634.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <Label layoutX="194.0" layoutY="26.0" minHeight="16" minWidth="69" prefHeight="25.0" prefWidth="430.0" text="CÁRITAS DIOCESANA DE ALBACETE" textFill="#c90000">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font></Label>
+      <Label layoutX="277.0" layoutY="79.0" text="Informes de Programas">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="144.0" fitWidth="202.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/imageCaritas.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="105.0" fitWidth="106.0" layoutX="650.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/imageAPP.png" />
+         </image>
+       </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff0f" height="473.0" layoutX="18.0" layoutY="140.0" stroke="#ff000054" strokeType="INSIDE" strokeWidth="3.0" width="743.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Rectangle>
+            <Button fx:id="excelProgramas" layoutX="169.0" layoutY="351.0" mnemonicParsing="false" onAction="#generarExcelProgramas" prefHeight="51.0" prefWidth="51.0" />
+            <Label layoutX="69.0" layoutY="306.0" text="EXPORTAR PROGRAMAS" textFill="#c90000">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="453.0" layoutY="306.0" text="INFORMES PROGRAMAS" textFill="#c90000">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="pdfPrograma" layoutX="550.0" layoutY="351.0" mnemonicParsing="false" onAction="#generarPDFProgramas" prefHeight="51.0" prefWidth="51.0" />
+    </children>
+</AnchorPane>
+   </children>
+</HBox>

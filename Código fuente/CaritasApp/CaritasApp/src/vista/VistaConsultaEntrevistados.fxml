@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="976.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorConsultaEntrevistados">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="406.0" layoutX="37.0" layoutY="157.0" stroke="#ff000055" strokeType="INSIDE" strokeWidth="3.0" width="892.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Rectangle>
+      <Label layoutX="273.0" layoutY="36.0" minHeight="16" minWidth="69" prefHeight="25.0" prefWidth="430.0" text="CÁRITAS DIOCESANA DE ALBACETE" textFill="#c90000">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font></Label>
+      <Label layoutX="305.0" layoutY="70.0" text="Registro General de Voluntariado">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="120.0" fitWidth="187.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/imageCaritas.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="102.0" fitWidth="106.0" layoutX="844.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/imageAPP.png" />
+         </image>
+       </ImageView>
+      <Label layoutX="382.0" layoutY="110.0" text="Consulta de Entrevistas" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCancelarConsulta" cancelButton="true" layoutX="667.0" layoutY="574.0" mnemonicParsing="false" onAction="#cancelarConsulta" prefHeight="46.0" prefWidth="92.0" text="Cancelar">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="btnModificarDatos" layoutX="777.0" layoutY="574.0" mnemonicParsing="false" onAction="#modificarDatos" prefHeight="46.0" prefWidth="152.0" text="Consultar Entrevista">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="101.0" layoutY="147.0" style="-fx-background-color: white;" text="Lista de entrevistados" textFill="#c90000">
+         <font>
+            <Font name="Arial Italic" size="17.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="63.0" layoutY="220.0" prefHeight="323.0" prefWidth="848.0">
+         <content>
+            <TableView fx:id="tablaEntrevistados" prefHeight="388.0" prefWidth="2175.0" stylesheets="@../css/hideScrollBar.css">
+              <columns>
+                <TableColumn fx:id="colDNI" prefWidth="128.0" text="DNI/NIF" />
+                <TableColumn fx:id="colNombre" prefWidth="128.0" text="NOMBRE" />
+                  <TableColumn fx:id="colSexo" prefWidth="128.0" text="SEXO" />
+                  <TableColumn fx:id="colNacimiento" prefWidth="128.0" text="NACIMIENTO" />
+                  <TableColumn fx:id="colTelefono1" prefWidth="128.0" text="TELÉFONO 1" />
+                  <TableColumn fx:id="colTelefono2" prefWidth="128.0" text="TELÉFONO 2" />
+                  <TableColumn fx:id="colEmail" prefWidth="128.0" text="EMAIL" />
+                  <TableColumn fx:id="colDir" prefWidth="128.0" text="DIRECCIÓN" />
+                  <TableColumn fx:id="colCP" prefWidth="128.0" text="CÓDIGO POSTAL" />
+                  <TableColumn fx:id="colPoblacion1" prefWidth="128.0" text="POBLACIÓN" />
+                  <TableColumn fx:id="colProvincia" prefWidth="128.0" text="PROVINCIA" />
+                  <TableColumn fx:id="colNacionalidad" prefWidth="128.0" text="NACIONALIDAD" />
+                  <TableColumn fx:id="colEstadoCivil" prefWidth="128.0" text="ESTADO CIVIL" />
+                  <TableColumn fx:id="colFechaAlta" prefWidth="128.0" text="FECHA ENTREVISTA" />
+                  <TableColumn fx:id="colObservacionesVoluntario" prefWidth="128.0" text="OBSERVACIONES" />
+                  <TableColumn fx:id="colFoto" prefWidth="128.0" text="FOTO" />
+                  <TableColumn fx:id="colEsVoluntario" prefWidth="128.0" text="VOLUNTARIO/A" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <TextField fx:id="search" layoutX="63.0" layoutY="180.0" prefHeight="25.0" prefWidth="848.0" promptText="Buscar entrevistado por nombre..." />
+    </children>
+</AnchorPane>

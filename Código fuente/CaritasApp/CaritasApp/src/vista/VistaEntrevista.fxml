@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="976.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorEntrevista">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="102.0" layoutX="17.0" layoutY="463.0" stroke="#ff000055" strokeType="INSIDE" strokeWidth="3.0" width="942.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="284.0" layoutX="17.0" layoutY="154.0" stroke="#ff000055" strokeType="INSIDE" strokeWidth="3.0" width="942.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Rectangle>
+      <Label layoutX="289.0" layoutY="30.0" minHeight="16" minWidth="69" prefHeight="25.0" prefWidth="430.0" text="CÁRITAS DIOCESANA DE ALBACETE" textFill="#c90000">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font></Label>
+      <Label layoutX="310.0" layoutY="70.0" text="Registro General de Voluntariado">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="144.0" fitWidth="202.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/imageCaritas.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="102.0" fitWidth="106.0" layoutX="849.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/imageAPP.png" />
+         </image>
+       </ImageView>
+      <Label layoutX="407.0" layoutY="110.0" text="Ficha de Entrevista" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="150.0" layoutX="77.0" layoutY="192.0" stroke="#0000008f" strokeDashOffset="1.0" strokeLineCap="BUTT" strokeLineJoin="BEVEL" width="150.0" />
+      <Label alignment="CENTER" layoutX="290.0" layoutY="177.0" text="Nombre:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField id="textNombre" fx:id="nombreEntrevista" layoutX="366.0" layoutY="173.0" prefHeight="25.0" prefWidth="316.0" />
+      <Label alignment="CENTER" layoutX="697.0" layoutY="178.0" text="DNI/NIF* :">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField id="textDNI" fx:id="dniEntrevista" layoutX="781.0" layoutY="173.0" prefHeight="25.0" prefWidth="146.0" />
+      <Label alignment="CENTER" layoutX="292.0" layoutY="256.0" text="Sexo:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <RadioButton id="radioM" layoutX="348.0" layoutY="256.0" mnemonicParsing="false" text="H">
+         <toggleGroup>
+            <ToggleGroup fx:id="sexo" />
+         </toggleGroup></RadioButton>
+      <RadioButton id="radioF" layoutX="387.0" layoutY="256.0" mnemonicParsing="false" text="M" toggleGroup="$sexo" />
+      <Label alignment="CENTER" layoutX="291.0" layoutY="218.0" text="Fecha de nacimiento:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker id="fechaNacimiento" fx:id="nacimientoEntrevista" layoutX="452.0" layoutY="214.0" />
+      <Label alignment="CENTER" layoutX="504.0" layoutY="292.0" text="Teléfonos:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField id="textTlfn1" fx:id="telefono1Entrevista" layoutX="596.0" layoutY="288.0" prefHeight="25.0" prefWidth="155.0" />
+      <TextField id="textTlfn2" fx:id="telefono2Entrevista" layoutX="771.0" layoutY="288.0" prefHeight="25.0" prefWidth="155.0" />
+      <Label alignment="CENTER" layoutX="450.0" layoutY="256.0" text="Email:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField id="textEmail" fx:id="emailEntrevista" layoutX="497.0" layoutY="252.0" prefHeight="25.0" prefWidth="430.0" />
+      <Label alignment="CENTER" layoutX="297.0" layoutY="326.0" text="Dirección:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField id="textDireccion" fx:id="direccionEntrevista" layoutX="371.0" layoutY="322.0" prefHeight="25.0" prefWidth="557.0" />
+      <Label alignment="CENTER" layoutX="641.0" layoutY="218.0" text="Cód. Postal:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField id="textCodigo" fx:id="codigoEntrevista" layoutX="741.0" layoutY="213.0" prefHeight="25.0" prefWidth="187.0" />
+      <Label alignment="CENTER" layoutX="41.0" layoutY="360.0" text="Población:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox id="comboPoblacion" fx:id="poblacionEntrevista" layoutX="128.0" layoutY="356.0" prefHeight="25.0" prefWidth="376.0" />
+      <Label alignment="CENTER" layoutX="547.0" layoutY="362.0" text="Provincia:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox id="comboProvincia" fx:id="provinciaEntrevista" layoutX="635.0" layoutY="357.0" prefHeight="25.0" prefWidth="293.0" />
+      <Label alignment="CENTER" layoutX="40.0" layoutY="401.0" text="Nacionalidad:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField id="textNacionalidad" fx:id="nacionalidadEntrevista" layoutX="138.0" layoutY="397.0" prefHeight="25.0" prefWidth="366.0" />
+      <Label alignment="CENTER" layoutX="526.0" layoutY="401.0" text="Estado Civil:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox id="comboEstado" fx:id="estadoEntrevista" layoutX="636.0" layoutY="397.0" prefHeight="25.0" prefWidth="293.0" />
+      <Label alignment="CENTER" layoutX="55.0" layoutY="506.0" text="Fecha Entrevista:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker id="fechaEntrevista" fx:id="fechaEntrevista" layoutX="187.0" layoutY="502.0" prefHeight="25.0" prefWidth="193.0" />
+      <Label alignment="CENTER" layoutX="419.0" layoutY="506.0" text="Observaciones:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="observacionesEntrevista" layoutX="553.0" layoutY="478.0" prefHeight="74.0" prefWidth="376.0" />
+      <Button fx:id="btnCancelarEntrevista" cancelButton="true" layoutX="562.0" layoutY="578.0" mnemonicParsing="false" onAction="#cancelarEntrevista" prefHeight="46.0" prefWidth="92.0" text="Cancelar">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="btnGuardarEntrevista" layoutX="673.0" layoutY="578.0" mnemonicParsing="false" onAction="#guardarEntrevista" prefHeight="46.0" prefWidth="286.0" text="Guardar Entrevista / Crear Voluntario">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="62.0" layoutY="453.0" style="-fx-background-color: white;" text="Entrevista" textFill="#c90000">
+         <font>
+            <Font name="Arial Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="69.0" layoutY="144.0" style="-fx-background-color: white;" text="Datos personales" textFill="#c90000">
+         <font>
+            <Font name="Arial Italic" size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSubirFoto" layoutX="293.0" layoutY="287.0" mnemonicParsing="false" onAction="#subirFoto" text="Añadir foto" />
+      <Button fx:id="btnEliminarFoto" layoutX="382.0" layoutY="287.0" mnemonicParsing="false" onAction="#eliminarFoto" text="Quitar foto" />
+      <ImageView fx:id="fondoFoto" fitHeight="145.0" fitWidth="145.0" layoutX="77.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" />
+    </children>
+</AnchorPane>
